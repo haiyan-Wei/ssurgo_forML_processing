@@ -1,0 +1,6 @@
+# Data folders (if they contain large files)
+inputs/
+outputs/
+
+# Old scripts (optional - you might want to track these)
+old_scripts/
