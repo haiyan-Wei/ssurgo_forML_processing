@@ -6,12 +6,12 @@ import pandas as pd
 
 
 # input
-database_path = r"D:\work\data\ssurgo_download\DATABSE20251213"
-output_tablename = "rating_tables_20260108.csv"
+database_path = r"B:\work_subset\projects\data\ssurgo_portal\02_gpkg_by_state_database"
+output_tablename = "rating_table_list_20260113.csv"
 
 # output
 workspace = os.path.dirname(os.path.abspath(__file__))
-output_directory = os.path.join(workspace, "output")
+output_directory = os.path.join(workspace,  "outputs", "v2", "02_rating_tables_list_in_all_gpkg")
 
 df_rating_tables = pd.DataFrame([])
 original_workspace = arcpy.env.workspace

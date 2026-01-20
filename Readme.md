@@ -1,4 +1,9 @@
 # SSURGO Processing Pipeline
+
+## Overview
+Processes bulk SSURGO data into state-level geopackages, extracts soil variables, and combines with SOLUS.
+
+## Steps
 1. download bulk raw data in arcpro with tbx tool
 2. create gpkg for each state
     - use `01_check_missing_state_pkgp.py` to check if missed any state
@@ -9,8 +14,6 @@
 6. run `05_combine_ssurgo_with_solus.py`
 
 
-## Key Decisions
-- depth choices
-- vaiable choices
-- to be compatable wiht SOLUS
-
+## Important
+- SSURGO gpkg (raw data from step 1/2) doesn't follow exactly state boarders. so do not use state boundaries
+- use points `nri66kpoints_prj_ssurgo` for projection consistency
